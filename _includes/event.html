@@ -1,0 +1,8 @@
+<h2>{{item.title}}</h2>
+<small class='date'>
+{{item.date | date:"%b %d %Y"}}
+</small>
+{% if item.rsvp_url %}
+<a href='{{item.rsvp_url}}'>RSVP</a>
+{% endif %}
+{{item.content}}

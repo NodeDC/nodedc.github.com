@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+{% assign base = site.baseurl %}
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <title>{% if page.url == '/index.html' %}{{page.title}}{% else %}{{page.title}}{% endif %}</title>
+  <link rel='stylesheet' href='{{base}}/site.css' type='text/css'/>
+  <!--[if IE]><link rel='stylesheet' href='{{base}}/site-ie.css' type='text/css'/><![endif]-->
+  <link rel='shortcut icon' href='{{base}}/images/favicon.ico' type='image/x-icon' />
+  <link href='http://fonts.googleapis.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+  <script src='{{base}}/site.js' type='text/javascript'></script>
+</head>
+<body>
+  <div class='limiter'>
+    <aside>
+      <div class='buttons'>
+        <a href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>Watch this event</a>
+        <a href='#'>Submit session</a>
+      </div>
+
+      <div class='followers'></div>
+      <div class='tweets'></div>
+      <div class='follower-project'></div>
+    </aside>
+    <div id='main'>
+      <header>
+        <h1><a class='logo' href="/">node.dc</a></h1>
+      </header>
+      <div id='content'>
+        {{ content }}
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+auto: true
+server: true
+exclude: README.md, .gitignore
+permalink: none
+baseurl: 
+url: http://nodedc.org
+hashtag: '#nodedc'
+github_login: 'developmentseed'
+github_repo: 'bones'
+github_lanaguage: 'JavaScript'

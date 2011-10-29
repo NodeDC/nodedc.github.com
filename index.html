@@ -1,0 +1,10 @@
+---
+layout: default
+title: node.dc
+rss: /blog.rss
+---
+<div class='events prose'>
+  {% for item in site.categories['events'] limit:4 %}
+  {% include event.html %}
+  {% endfor %}
+</div>

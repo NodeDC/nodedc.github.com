@@ -1,0 +1,90 @@
+---
+---
+{% include css/reset.css %}
+
+body {
+  background:#fff url(assets/background.png);
+  color:#444;
+  font:normal 14px/20px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+.limiter {
+  width:760px;
+  margin:0px auto;
+  }
+
+aside {
+  float:right;
+  width:200px;
+  margin-top:175px;
+  }
+
+header .logo {
+  height:175px;
+  background:url(assets/logo.png) no-repeat 50% 50%;
+  display:block;
+  overflow:hidden;
+  text-indent:-9999px;
+  }
+
+#main,
+header .logo {
+  width:530px;
+  }
+
+#content {
+  background:#f3ece1;
+  padding:20px;
+  }
+
+.prose h1,
+.prose h2 {
+  font-family: 'Jockey One', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size:22px;
+  font-weight:normal;
+  }
+
+/* Prose */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 { color:#000; }
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6,
+.prose p,
+.prose ul,
+.prose ol,
+.prose hr,
+.prose img,
+.prose blockquote,
+.prose pre,
+.prose table,
+.prose iframe,
+.prose object,
+.prose .ts-map {
+  display:block;
+  margin:0px 0px 20px;
+  }
+
+a.github-user {
+  display:block;
+  height:48px;
+  width:48px;
+  margin: 0px 4px 4px 0px;
+  float:left;
+  }
+
+  a.github-user .thumb {
+    display:block;
+    height:48px;
+    width:48px;
+    background:white 50% 50% no-repeat;
+    background-size:48px;
+    }

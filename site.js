@@ -75,6 +75,11 @@ $(longneck.githubWatchers);
 longneck.setup = function() {
     var tweets = $('.tweets');
 
+    $('.watch').hover(
+        function() { $('.watch-docs').addClass('active') },
+        function() { $('.watch-docs').removeClass('active') }
+    )
+
     $.ajax({
         url: 'http://search.twitter.com/search.json',
         data: { q: '{{site.hashtag}}', rpp:100 },

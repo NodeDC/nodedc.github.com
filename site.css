@@ -121,7 +121,8 @@ a.github-user {
   font-size:12px;
   position:absolute;
   top:-20px;
-  left:-330px;
+  left:-320px;
+  width:275px;
   background:white;
   border:1px solid #CACACA;
   padding:15px 15px 10px;
@@ -147,6 +148,6 @@ a.github-user {
     }
 
   .watch-docs img {
-    margin:10px 25px 0px;
+    margin:10px 15px 0px;
     text-align:center;
     }

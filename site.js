@@ -39,7 +39,7 @@ longneck.githubWatcherProject = function(resp) {
                         + "<span class='title'> <%=description%></span>"
                         + "";
                     var t = _(template).template(repo);
-                    watcherProject.html(t).addClass('loaded');
+                    watcherProject.append(t).addClass('loaded');
                 }
 
             }
@@ -65,7 +65,7 @@ longneck.githubWatchers = function() {
             var t = _(resp.data)
                 .map(function(i) { return _(template).template(i); })
                 .join('');
-            watchers.html(t);
+            watchers.append(t);
         }
     });
 };
@@ -98,7 +98,7 @@ longneck.setup = function() {
             var t = _(resp.results.slice(0,30))
                 .map(function(i) { return _(template).template(i); })
                 .join('');
-            tweets.html(t).addClass('loaded');
+            tweets.append(t).addClass('loaded');
         }
     });
 }

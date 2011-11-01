@@ -42,7 +42,10 @@ header .logo {
   padding:0px 20px 20px;
   }
 
-h1, h2 { margin-top:10px; }
+.followers,
+.follower-project,
+.tweets,
+.editing { margin-bottom:10px; }
 
 .prose h1,
 .prose h2 {
@@ -50,7 +53,6 @@ h1, h2 { margin-top:10px; }
   font-size:22px;
   font-weight:normal;
   }
-
 
 /* Prose */
 .prose h1,
@@ -154,6 +156,10 @@ a.github-user {
     margin:10px 15px 0px;
     text-align:center;
     }
+
+.editing {
+  font-size:11px;
+  }
 
 /*
 ** Markup free clearing

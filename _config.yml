@@ -5,6 +5,6 @@ permalink: none
 baseurl: 
 url: http://nodedc.org
 hashtag: '#nodedc'
-github_login: 'developmentseed'
-github_repo: 'bones'
+github_login: 'nodedc'
+github_repo: 'nodedc.github.com'
 github_lanaguage: 'JavaScript'

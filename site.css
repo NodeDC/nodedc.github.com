@@ -10,6 +10,7 @@ body {
 
 a {
   text-decoration:none;
+  color: #4183C4;
   }
 
 .limiter {
@@ -151,3 +152,22 @@ a.github-user {
     margin:10px 15px 0px;
     text-align:center;
     }
+
+/*
+** Markup free clearing
+** Details: http://www.positioniseverything.net/easyclearing.html
+*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  }
+
+.clearfix { display: inline-block; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */

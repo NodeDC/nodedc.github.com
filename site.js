@@ -12,14 +12,15 @@ longneck.githubWatcherProject = function(resp) {
     var watcherProject = $('.follower-project');
     var i = 0;
     var max = 4; // Make a maximum of five requests before giving up.
-    var shuffled = _(resp).shuffle();
+    var shuffled = _(resp.data).shuffle();
 
     var getProjects = function(u) {
         $.ajax({
             url: 'https://api.github.com/users/' + u.login + '/repos',
-            dataType: 'json',
+            dataType: 'jsonp',
             success: function(resp) {
-                var repo = _(resp)
+                if (!resp.data.length) return;
+                var repo = _(resp.data)
                     .chain()
                     .shuffle()
                     .detect(function(r) { return r.language === '{{site.github_lanaguage}}' })
@@ -54,15 +55,15 @@ longneck.githubWatchers = function() {
         // TODO: this endpoint only returns maximum 30 users. Implement random
         // pagination so we see different groups of people.
         url: 'https://api.github.com/repos/{{site.github_login}}/{{site.github_repo}}/watchers',
-        dataType: 'json',
+        dataType: 'jsonp',
         success: function(resp) {
-            if (!resp.length) return;
+            if (!resp.data.length) return;
             longneck.githubWatcherProject(resp);
             var template =
                 "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>"
                 + "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>"
                 + "</a>";
-            var t = _(resp)
+            var t = _(resp.data)
                 .map(function(i) { return _(template).template(i); })
                 .join('');
             watchers.html(t);

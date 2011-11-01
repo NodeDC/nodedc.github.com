@@ -30,14 +30,13 @@ longneck.githubWatcherProject = function(resp) {
                     getProjects(shuffled[i++]);
                 } else {
                     var template =
-                        "<a target='_blank' href='<%=html_url%>'>"
-                        + "<span class='thumb' style='background-image:url(<%=owner.avatar_url%>)'></span>"
-                        + "</a>"
+                        ""
+                        + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
+                        + " / "
                         + "<a target='_blank' href='<%=html_url%>'>"
-                        + "<span class='title'><%=owner.login%></span>"
+                        + "<span class='title'><strong><%=name%></strong></span>"
                         + "</a>"
-                        + "<span class='title'><%=name%></span>"
-                        + "<span class='title'><%=description%></span>"
+                        + "<span class='title'> <%=description%></span>"
                         + "";
                     var t = _(template).template(repo);
                     watcherProject.html(t).addClass('loaded');

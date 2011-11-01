@@ -1,9 +1,3 @@
----
----
-;{% include js/jquery-1.6.4.min.js %}
-;{% include js/underscore.js %}
-;
-
 (function(context) {
 
 var longneck = {};
@@ -23,21 +17,22 @@ longneck.githubWatcherProject = function(resp) {
                 var repo = _(resp.data)
                     .chain()
                     .shuffle()
-                    .detect(function(r) { return r.language === '{{site.github_lanaguage}}' })
+                    .detect(function(r) {
+                      return r.language === '{{site.github_language}}';
+                    })
                     .value();
 
                 if (!repo) {
                     getProjects(shuffled[i++]);
                 } else {
-                    var template =
-                        ""
-                        + "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>"
-                        + " / "
-                        + "<a target='_blank' href='<%=html_url%>'>"
-                        + "<span class='title'><strong><%=name%></strong></span>"
-                        + "</a>"
-                        + "<span class='title'> <%=description%></span>"
-                        + "";
+                    var template = "" +
+                        "<a target='_blank' href='http://github.com/<%=owner.login%>'><%=owner.login%></a>" +
+                        " / " +
+                        "<a target='_blank' href='<%=html_url%>'>" +
+                        "<span class='title'><strong><%=name%></strong></span>" +
+                        "</a>" +
+                        "<span class='title'> <%=description%></span>" +
+                        "";
                     var t = _(template).template(repo);
                     watcherProject.append(t).addClass('loaded');
                 }
@@ -59,11 +54,13 @@ longneck.githubWatchers = function() {
             if (!resp.data.length) return;
             longneck.githubWatcherProject(resp);
             var template =
-                "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>"
-                + "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>"
-                + "</a>";
+                "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>" +
+                "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>" +
+                "</a>";
             var t = _(resp.data)
-                .map(function(i) { return _(template).template(i); })
+                .map(function(i) {
+                  return _(template).template(i);
+                })
                 .join('');
             watchers.append(t);
         }
@@ -76,9 +73,12 @@ longneck.setup = function() {
     var tweets = $('.tweets');
 
     $('.watch').hover(
-        function() { $('.watch-docs').addClass('active') },
-        function() { $('.watch-docs').removeClass('active') }
-    )
+        function() {
+          $('.watch-docs').addClass('active');
+        },
+        function() {
+          $('.watch-docs').removeClass('active');
+        });
 
     $.ajax({
         url: 'http://search.twitter.com/search.json',
@@ -87,21 +87,23 @@ longneck.setup = function() {
         success: function(resp) {
             if (!resp.results.length) return;
             var template =
-                "<a target='_blank' href='http://twitter.com/<%=from_user%>/status/<%=id_str%>' class='tweet'>"
-                + "<span class='thumb' style='background-image:url(<%=profile_image_url%>)'></span>"
-                + "<span class='popup'>"
-                + "<span class='title'>@<%=from_user%></span>"
-                + "<small><%=text%></small>"
-                + "</span>"
-                + "<span class='caret'></span>"
-                + "</a>";
+                "<a target='_blank' href='http://twitter.com/<%=from_user%>/status/<%=id_str%>' class='tweet'>" +
+                "<span class='thumb' style='background-image:url(<%=profile_image_url%>)'></span>" +
+                "<span class='popup'>" +
+                "<span class='title'>@<%=from_user%></span>" +
+                "<small><%=text%></small>" +
+                "</span>" +
+                "<span class='caret'></span>" +
+                "</a>";
             var t = _(resp.results.slice(0,30))
-                .map(function(i) { return _(template).template(i); })
+                .map(function(i) {
+                  return _(template).template(i);
+                })
                 .join('');
             tweets.append(t).addClass('loaded');
         }
     });
-}
+};
 $(longneck.setup);
 
 context.longneck = longneck;

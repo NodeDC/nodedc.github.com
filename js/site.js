@@ -15,7 +15,7 @@ longneck.githubWatcherProject = function(resp) {
             url: 'https://api.github.com/users/' + u.login + '/repos',
             dataType: 'jsonp',
             success: function(resp) {
-                if (!resp.data.length) return;
+                if (!resp.data.length) return getProjects(shuffled[++i]);
                 var repo = _(resp.data)
                     .chain()
                     .shuffle()
@@ -25,7 +25,7 @@ longneck.githubWatcherProject = function(resp) {
                     .value();
 
                 if (!repo) {
-                    getProjects(shuffled[i++]);
+                    getProjects(shuffled[++i]);
                 } else {
                     var template =
                         ""

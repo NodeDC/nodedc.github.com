@@ -61,6 +61,9 @@ longneck.githubWatchers = function() {
             var template =
                 "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>" +
                 "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>" +
+                "<span class='popup'>" +
+                "<span class='title'><%=login%></span>" +
+                "</span>" +
                 "</a>";
             var t = _(resp.data)
                 .map(function(i) { return _(template).template(i); })

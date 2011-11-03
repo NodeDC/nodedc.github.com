@@ -25,6 +25,12 @@ aside {
   margin-top:175px;
   }
 
+small {
+  color: #888;
+  display: block;
+  font-size: 12px;
+  }
+
 header .logo {
   height:175px;
   background:url(assets/logo.png) no-repeat 50% 50%;
@@ -83,21 +89,45 @@ header .logo {
   margin:0px 0px 20px;
   }
 
-a.github-user {
+a.github-user,
+a.tweet {
   display:block;
   height:48px;
   width:48px;
   margin: 0px 4px 4px 0px;
   float:left;
+  position: relative;
   }
 
-  a.github-user .thumb {
-    display:block;
-    height:48px;
-    width:48px;
-    background:white 50% 50% no-repeat;
-    background-size:48px;
-    }
+.thumb {
+  display:block;
+  height:48px;
+  width:48px;
+  background:white 50% 50% no-repeat;
+  background-size:48px;
+  }
+
+.popup {
+  display:none;
+  position:absolute;
+  right:55px;
+  top:-5px;
+  width:180px;
+  padding:5px 20px 5px 10px;
+  background:black;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  }
+
+.popup * { color:#fff; }
+
+.tweet:hover,
+.github-user:hover { z-index:1; }
+.tweet:hover .caret,
+.tweet:hover .popup,
+.github-user:hover .caret,
+.github-user:hover .popup { display:block; }
 
 .buttons {
   margin-bottom:10px;

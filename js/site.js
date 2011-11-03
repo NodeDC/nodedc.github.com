@@ -93,7 +93,6 @@ longneck.setup = function() {
                 + "<span class='title'>@<%=from_user%></span>"
                 + "<small><%=text%></small>"
                 + "</span>"
-                + "<span class='caret'></span>"
                 + "</a>";
             var t = _(resp.results.slice(0,30))
                 .map(function(i) { return _(template).template(i); })

@@ -25,12 +25,6 @@ aside {
   margin-top:175px;
   }
 
-small {
-  color: #888;
-  display: block;
-  font-size: 12px;
-  }
-
 header .logo {
   height:175px;
   background:url(assets/logo.png) no-repeat 50% 50%;
@@ -121,6 +115,11 @@ a.tweet {
   }
 
 .popup * { color:#fff; }
+
+.popup small {
+  display: block;
+  font-size: 12px;
+  }
 
 .tweet:hover,
 .github-user:hover { z-index:1; }

@@ -15,7 +15,7 @@ longneck.githubWatcherProject = function(resp) {
             url: 'https://api.github.com/users/' + u.login + '/repos',
             dataType: 'jsonp',
             success: function(resp) {
-                if (!resp.data.length) return;
+                if (!resp.data.length) return getProjects(shuffled[++i]);
                 var repo = _(resp.data)
                     .chain()
                     .shuffle()
@@ -25,7 +25,7 @@ longneck.githubWatcherProject = function(resp) {
                     .value();
 
                 if (!repo) {
-                    getProjects(shuffled[i++]);
+                    getProjects(shuffled[++i]);
                 } else {
                     var template =
                         ""
@@ -61,6 +61,9 @@ longneck.githubWatchers = function() {
             var template =
                 "<a class='github-user' target='_blank' href='http://github.com/<%=login%>'>" +
                 "<span style='background-image:url(<%=avatar_url%>)' class='thumb' /></span>" +
+                "<span class='popup'>" +
+                "<span class='title'><%=login%></span>" +
+                "</span>" +
                 "</a>";
             var t = _(resp.data)
                 .map(function(i) { return _(template).template(i); })
@@ -93,7 +96,6 @@ longneck.setup = function() {
                 + "<span class='title'>@<%=from_user%></span>"
                 + "<small><%=text%></small>"
                 + "</span>"
-                + "<span class='caret'></span>"
                 + "</a>";
             var t = _(resp.results.slice(0,30))
                 .map(function(i) { return _(template).template(i); })

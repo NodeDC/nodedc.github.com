@@ -12,6 +12,7 @@ So far we have two talks on the lineup:
 
 - [Young Hahn](https://twitter.com/#!/younghahn) will talk about [CouchDB](http://couchdb.apache.org/), pointing out useful things he's learned about the open source document-oriented database 
 - [Justin Miller](https://twitter.com/#!/incanus77), visiting from Portland, will talk about how he bridged Cocoa to node.js
+- [Chris Verwymeren](https://twitter.com/#!/cvee) and [Jon](https://twitter.com/#!/linesandwaves) will share their work using node.js on [Grandstand](http://getgrandstand.com/)
 
 Everyone is welcome to attend this meetup, including newcomers to node.js, those interested to hear what the hype is about, and experienced developers looking to trade tricks. 
 

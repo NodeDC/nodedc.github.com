@@ -11,7 +11,7 @@ The next [Washington, DC Node.js meetup](http://nodedc-november.eventbrite.com/)
 So far we have two talks on the lineup:
 
 - [Young Hahn](https://twitter.com/#!/younghahn) will talk about [CouchDB](http://couchdb.apache.org/), pointing out useful things he's learned about the open source document-oriented database 
-- [Chris Verwymeren](https://twitter.com/#!/cvee) and [Jon](https://twitter.com/#!/linesandwaves) will share their work using node.js on [Grandstand](http://getgrandstand.com/)
+- [Chris Verwymeren](https://twitter.com/#!/cvee) will talk about running node.js apps in Ubuntu with [Upstart](http://upstart.ubuntu.com/).
 - [Aaron Silverman](http://twitter.com/Zugwalt) and [Dylan Greene](https://twitter.com/#!/dylang) will talk about their [Node Knockout](http://blog.nodeknockout.com/post/9895206272/node-knockout-winners) project [DoodleOrDie](http://doodleordie.com/), which one "most fun" entry.
 - [Justin Miller](https://twitter.com/#!/incanus77), visiting from Portland, will talk about how he bridged Cocoa to node.js
 

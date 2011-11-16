@@ -85,7 +85,7 @@ longneck.setup = function() {
 
     $.ajax({
         url: 'http://search.twitter.com/search.json',
-        data: { q: site.hashtag, rpp:100 },
+        data: { q: site.twitter_search, rpp:100 },
         dataType: 'jsonp',
         success: function(resp) {
             if (!resp.results.length) return;

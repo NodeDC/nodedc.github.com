@@ -5,6 +5,7 @@ permalink: none
 baseurl: 
 url: http://nodedc.org
 hashtag: '#nodedc'
+twitter_search: ''
 github_login: 'developmentseed'
 github_repo: 'bones'
 github_language: 'JavaScript'

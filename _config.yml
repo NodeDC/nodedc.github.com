@@ -5,7 +5,7 @@ permalink: none
 baseurl: 
 url: http://nodedc.org
 hashtag: '#nodedc'
-twitter_search: ''
+twitter_search: '#nodedc OR @nodedc -from:Nodejs_bot'
 github_login: 'nodedc'
 github_repo: 'nodedc.github.com'
 github_language: 'JavaScript'

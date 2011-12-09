@@ -9,7 +9,9 @@ The December NodeDC meetup will be on **Wednesday, December 14 at 7:00 pm**. We'
 
 - [Will White](https://twitter.com/#!/willwhitedc) will talk about node-inspector, a handy browser-based node debugging tool that allows you to set breakpoints, step though code, and even edit code while a process is running.
 
-We are looking for more volunteers to present. If you’re interested, send your topic to @nodedc.
+- [Ray Daly](https://twitter.com/#!/raydaly) will talk about concept of TTD for APIs using node and hopes to get feedback from the group.
+
+If you’d like to give a lightning talk, send your topic to @nodedc.
 
 The meetup will be at the upstairs bar of [Stetson's](http://stetsons-dc.com/), located right at 16th and U streets NW. Both the Dupont Circle metro stop on the red line and U street on the green line are about four blocks away, with 16th street buses all passing within a block of the bar.
 

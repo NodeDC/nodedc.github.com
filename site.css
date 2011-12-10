@@ -83,6 +83,10 @@ header .logo {
   margin:0px 0px 20px;
   }
 
+.prose li { margin-left:30px; }
+.prose ul li { list-style:disc; }
+.prose ol li { list-style:decimal; }
+
 a.github-user,
 a.tweet {
   display:block;

@@ -5,7 +5,7 @@ rsvp_url: http://nodedc-september-eorg.eventbrite.com/
 ---
 Come on over to Development Seed's garage to talk about Node.js and why you should be using it on Tuesday, September 20. The July meetup brought out a lot of node.js developers and interested people, and we're hoping this one does the same.
 
-We'll have a few five minute lightning talks around topics relating to Node.js. We're looking for a few more speakers. If you'd like to give one, please submit it here or send it to @developmentseed. So far, we have one lightning talk on the schedule.
+We'll have a few five minute lightning talks around topics relating to Node.js. We're looking for a few more speakers. If you'd like to give one, please submit it here or send it to @developmentseed. So far, we have these lightning talks on the schedule.
 
 Adrian Rossouw will give an intro to [Underscore.js](http://github.com/documentcloud/underscore.js). He'll run through some of the features of the most depended on package in npm. Underscore.js is quickly becoming a requirement for both server-side and client side developers, and its collection of small utility functions will help you work more efficiently with data structures. Underscore.js also forms the basis or inspiration for several other popular libraries, such as Backbone and Spine. More details on underscore.js are here.
 

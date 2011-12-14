@@ -4,7 +4,7 @@ title: NodeDC
 rss: /blog.rss
 ---
 <div class='events prose'>
-  {% for item in site.categories['events'] limit:3 %}
+  {% for item in site.categories['events'] limit:10 %}
   {% include event.html %}
   {% endfor %}
 </div>

@@ -7,7 +7,7 @@ The January NodeDC meetup will be on **Monday, January 16** at [Stetson's Bar an
 
 - [Aaron Silverman](zugwalt) will walk through "JavaScript: The Good Parts". 
 - [Jonathan Altman](https://twitter.com/#!/async_io) will talk about generating heat maps of user click activity using node.js.
-- Someone from [Development Seed](http://developmentseed.org/) will talk about Mongo vs. Couch.
+- [Dane Springmeyer](http://twitter.com/springmeyer) will talk about the state of node on Windows.
 
 If you'd like to give a talk, please send your topic to [@nodedc](https://twitter.com/#!/nodedc) and we'll add you to the list. 
 

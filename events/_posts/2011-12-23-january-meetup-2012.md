@@ -5,8 +5,7 @@ rsvp_url: http://nodedc-january.eventbrite.com/
 ---
 The January NodeDC meetup will be on **Monday, January 16** at [Stetson's Bar and Grill]() at the intersection of 16th and U streets. These monthly events bring together developers to talk about node.js and are a great opportunity to share what you are working on, find out how others are using node, and get to know other local developers. This meetup will start at 7:00 pm, with a round of five minute lightning talks kicking off at 7:30 pm following introductions. 
 
-This month we'll have talks:
-
+This month we'll have four talks:
 - [Aaron Silverman](https://twitter.com/#!/Zugwalt) will walk through "JavaScript: The Good Parts". 
 - [Jonathan Altman](https://twitter.com/#!/async_io) will talk about generating heat maps of user click activity using node.js.
 - [Dane Springmeyer](http://twitter.com/springmeyer) will talk about the state of node on Windows.

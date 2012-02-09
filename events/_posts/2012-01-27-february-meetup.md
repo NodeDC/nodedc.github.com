@@ -5,7 +5,7 @@ rsvp_url: http://www.meetup.com/node-dc/events/49905452/
 ---
 The February NodeDC meetup will be on **Monday, February 20 starting at 7:00 pm** at [Stetson's Bar and Grill](http://nodedc.github.com/) at the intersection of 16th and U streets. So far we have one speaker:
 
-- [Jafar Amjad](https://twitter.com/#!/jafaramjad) will present on making a Node.js multplayer site, specifically one that uses a low amount of bandwidth per player and features lasers, gravity, and walk cycles via animated gif's. Check out his [early beta version](http://jaf.ar.com) for a preview. 
+- [Jafar Amjad](https://twitter.com/#!/jafaramjad) will present on making a Node.js multiplayer site, specifically one that uses a low amount of bandwidth per player and features lasers, gravity, and walk cycles via animated gif's. Check out his [early beta version](http://jaf.ar.com) for a preview. 
 
 - [Ryan Roemer](https://twitter.com/#!/ryan_roemer) will talk about [async.js](https://github.com/caolan/async).
 

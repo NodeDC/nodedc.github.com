@@ -8,7 +8,7 @@ The May NodeDC meetup will be **Wednesday, May 16 at 7:00 pm** at Stetson's Bar 
 
 Once everyone has drinks at 7:30 pm, we'll do a round of introductions and then have several lightning talks. So far we have one on the lineup:
 
-- [John Kelvie](http://twitter.com/johnkelvie) will show the technical design of a game he is building in node.js, and request feedback.
+- [John Kelvie](http://twitter.com/johnkelvie) and Michael Myers of Atomizer Software will present the technical design of a game they are building with node.js, and request feedback. 
 
 If you'd like to give a five minute talk on something relating to node.js, send a message to [@nodedc](https://twitter.com/#!/nodedc). 
 

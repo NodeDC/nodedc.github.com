@@ -10,6 +10,8 @@ Once everyone has drinks at 7:30 pm, we'll do a round of introductions and then 
 
 - [John Kelvie](http://twitter.com/johnkelvie) and Michael Myers of Atomizer Software will present the technical design of a game they are building with node.js, and request feedback. 
 
+- [David Rees](https://twitter.com/#!/studgeek) will talk about [Derby.js](http://derbyjs.com/), a MVC framework for writing realtime, collaborative applications that run in Node.js and browsers, and compare it to [Meteor](https://github.com/meteor/meteor). 
+
 If you'd like to give a five minute talk on something relating to node.js, send a message to [@nodedc](https://twitter.com/#!/nodedc). 
 
 We meet once a month, usually the third Wednesday of the month. For updates, watch us here on github, follow [@nodedc](https://twitter.com/#!/nodedc) on Twitter, and join the [meetup group](http://www.meetup.com/node-dc/).

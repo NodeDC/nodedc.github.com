@@ -18,7 +18,7 @@ Presentations summary:
 
 NodeDC usually meets once a month, on the third Wednesday of the month. For updates follow [@NodeDC](http://twitter.com/nodedc) on Twitter, join our [meetup group](http://www.meetup.com/node-dc/), and/or watch us on [github](https://github.com/nodedc/nodedc.github.com).
 
-We are looking for people to give five minute lightning talks on topics related to node - projects built on it, coding and performance tricks, and anything that could be of interest. If you'd like to give a talk, send a message to [@NodeDC](http://twitter.com/nodedc) on Twitter or [through meetup](http://www.meetup.com/node-dc/) and we’ll add you to the lineup!
+We are looking for people to give five minute lightning talks on topics related to node - projects built on it, coding and performance tricks, and anything that could be of interest. If you'd like to give a talk, send a message to us at [@NodeDC](http://twitter.com/nodedc) or through [meetup](http://www.meetup.com/node-dc/suggestion/) and we’ll add you to the lineup!
 
 
 

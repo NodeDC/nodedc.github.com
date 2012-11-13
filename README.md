@@ -1,14 +1,3 @@
+This repository is used to generate the [nodedc.github.com](http://nodedc.github.com) pages. To make changes please update the appropriate markdown file in events/_posts and then send us a pull request.
 
-     __        ______   .__   __.   _______ .__   __.  _______   ______  __  ___
-    |  |      /  __  \  |  \ |  |  /  _____||  \ |  | |   ____| /      ||  |/  /
-    |  |     |  |  |  | |   \|  | |  |  __  |   \|  | |  |__   |  ,----'|  '  /
-    |  |     |  |  |  | |  . `  | |  | |_ | |  . `  | |   __|  |  |     |    <
-    |  `----.|  `--'  | |  |\   | |  |__| | |  |\   | |  |____ |  `----.|  .  \
-    |_______| \______/  |__| \__|  \______| |__| \__| |_______| \______||__|\__\
-
-                                                                Have a beer.
-
-
-
-Hosting your own meetup? Fork this repo, edit _config.yml and tweak the theme.
-Your members can follow your repo to appear on the followers list.
+To create your own github pages this way check out [longneck](https://github.com/willwhite/longneck).

@@ -1,8 +1,9 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 {% assign base = site.baseurl %}
 <html>
 <head>
   <meta charset='UTF-8'/>
+  <meta http-equiv="refresh" content="2; url=http://meetup.com/node-dc">
   <title>{% if page.url == '/index.html' %}{{page.title}}{% else %}{{page.title}}{% endif %}</title>
   <meta name="google-site-verification" content="3_AincuDV0tLeXzTSZtT0OteAIiDI0uTQW6228LD1pg" /> <!-- allow use of Google Webmaster Tools -->
   <link rel='stylesheet' href='{{base}}/site.css' type='text/css'/>
@@ -38,37 +39,16 @@
 </head>
 <body>
   <div class='limiter'>
-    <aside>
-      <div class='buttons'>
-        <a class='watch' href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>Watch this event</a>
-        <div class='watch-docs'>
-          <p>Watch this event by watching its repository on GitHub.</p>
-          <ol>
-            <li>Click on the "Watch this event" button.</ul>
-            <li>Login to GitHub or signup for a new account.</ul>
-            <li>Click the watch button for the repo.</ul>
-        </ol>
-        <img src='assets/watch.png' />
-        </div>
-      </div>
-
-      <div class='followers clearfix'>
-      </div>
-
-      <div class='follower-project clearfix'>
-        <h2>A member's {{site.github_language}} project</h2>
-      </div>
-      <div class='tweets clearfix'>
-        <h2>Tweets that mention {{site.hashtag}}</h2>
-      </div>
-      <div class='editing'><p>This website is <a href='http://github.com/{{site.github_login}}/{{site.github_repo}}'>open source</a> and you can help us edit it. To submit a change, <a href='http://help.github.com/fork-a-repo/'>fork this repo</a>, commit your changes, and send us a <a href='http://help.github.com/pull-requests/'>pull request</a>.</p></div>
-    </aside>
     <div id='main'>
       <header>
         <h1><a class='logo' href="/">node.dc</a></h1>
       </header>
-      <div id='content'>
-        {{ content }}
+      <div id='content' class="prose">
+        <h2>We’ve Moved!</h2>
+
+        <p>Node.dc now keeps in touch via <a href="http://meetup.com/node-dc">meetup.com/node-dc</a>. Check us out over there!</p>
+
+        <p>Redirecting…</p>
       </div>
     </div>
 
